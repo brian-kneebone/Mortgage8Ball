@@ -2,7 +2,8 @@
 const options = {
   type: 'date',
   dateFormat: 'yyyy-MM-dd',
-	showHeader: true
+	showHeader: false,
+	showClearButton: false
 }
 
 // Initialize all input of date type.
