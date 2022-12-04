@@ -1,7 +1,8 @@
 // Prepare the options
 const options = {
   type: 'date',
-  dateFormat: 'yyyy-MM-dd'
+  dateFormat: 'yyyy-MM-dd',
+	showHeader: true
 }
 
 // Initialize all input of date type.
@@ -23,3 +24,4 @@ if (element) {
 		console.log(datepicker.data.value());
 	});
 }
+
