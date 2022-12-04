@@ -4,6 +4,7 @@
     <title>Mortgage 8 Ball</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.18/dist/css/bulma-calendar.min.css"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -39,16 +40,21 @@
     </section>
     
     <div class="card">
+      
       <div class="card-content">
         <div class="content">
           To get started, specify your first payment date, starting principal, interest rate and ammortization frequency then press <b>Go</b>. 
         </div>
       </div>
+
       <footer class="card-footer">
-        
+
         <div class="container">
           
           <div class="field has-addons has-addons-centered">
+            <p class="control">
+              <input type="date" />
+            </p>
             <p class="control">
               <span class="select">
                 <select>
@@ -60,12 +66,12 @@
               <input class="input" type="text" placeholder="Starting Principal">
             </p>
           </div>
-    
         </div>
 
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.18/dist/js/bulma-calendar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.js"></script>
     <script src="main.js"></script>
   </body>
