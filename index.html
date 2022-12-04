@@ -38,23 +38,34 @@
       </div>
     </section>
     
-    <div class="container">
-      
-      <div class="columns">
-        
-        <div class="column">
-          <div id="left-autocomplete"></div>
-          <div id="left-summary"></div>
+    <div class="card">
+      <div class="card-content">
+        <div class="content">
+          To get started, specify your first payment date, starting principal, interest rate and ammortization frequency then press <b>Go</b>. 
         </div>
-        
-        <div class="column">
-          <div id="right-autocomplete"></div>
-          <div id="right-summary"></div>
-        </div>
-
       </div>
+      <footer class="card-footer">
+        
+        <div class="container">
+          
+          <div class="field has-addons has-addons-centered">
+            <p class="control">
+              <span class="select">
+                <select>
+                  <option>$</option>
+                </select>
+              </span>
+            </p>
+            <p class="control">
+              <input class="input" type="text" placeholder="Starting Principal">
+            </p>
+          </div>
+    
+        </div>
 
+      </footer>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.js"></script>
     <script src="main.js"></script>
   </body>
