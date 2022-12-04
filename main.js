@@ -3,7 +3,8 @@ const options = {
   type: 'date',
   dateFormat: 'yyyy-MM-dd',
 	showHeader: false,
-	showClearButton: false
+	showClearButton: false,
+	editTimeManually: true
 }
 
 // Initialize all input of date type.
@@ -26,3 +27,6 @@ if (element) {
 	});
 }
 
+// calendars[0].startDate = '1975-02-20';
+// calendars[0].refresh();
+// calendars[0].save();
