@@ -19,7 +19,7 @@ calendars.forEach(calendar => {
 });
 
 // To access to bulmaCalendar instance of an element
-const element = document.querySelector('#my-element');
+const element = document.querySelector('#startMortgageDate');
 if (element) {
 	// bulmaCalendar instance is available as element.bulmaCalendar
 	element.bulmaCalendar.on('select', datepicker => {
@@ -27,6 +27,9 @@ if (element) {
 	});
 }
 
-// calendars[0].startDate = '1975-02-20';
-// calendars[0].refresh();
-// calendars[0].save();
+
+// Set the current date/time for the mortgage start date.
+const today = (new Date()).toISOString().split('T')[0];
+calendars[0].startDate = today
+calendars[0].save();
+calendars[0].refresh();
