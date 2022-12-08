@@ -10,6 +10,13 @@
       "name": "Edge (Debug Locally)",
       "file": "index.html",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome (Debug Locally)",
+      "file": "index.html",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }
