@@ -1,34 +1,21 @@
-// Prepare the options
+// Initialize Bulma Calendars
+
 const options = {
-  type: 'date',
-  dateFormat: 'yyyy-MM-dd',
+	type: 'date',
+	dateFormat: 'yyyy-MM-dd',
 	showHeader: false,
 	showClearButton: false,
 	editTimeManually: true
 }
 
-// Initialize all input of date type.
-const calendars = bulmaCalendar.attach('[type="date"]', options);
+bulmaCalendar.attach('[type="date"]', options);
 
-// Loop on each calendar initialized
-calendars.forEach(calendar => {
-	// Add listener to select event
-	calendar.on('select', date => {
-		// console.log(date);
-	});
-});
+// Initialize Start Mortgage Date
 
-// To access to bulmaCalendar instance of an element
-const element = document.querySelector('#startMortgageDate');
-if (element) {
-	// bulmaCalendar instance is available as element.bulmaCalendar
-	element.bulmaCalendar.on('select', datepicker => {
-		// console.log(datepicker.data.value());
-	});
-}
+const startMortgageDate = document.querySelector('#startMortgageDate').bulmaCalendar;
 
-// Set the current date/time for the mortgage start date.
 const today = (new Date()).toISOString().split('T')[0];
-calendars[0].startDate = today
-calendars[0].save();
-calendars[0].refresh();
+startMortgageDate.startDate = today
+
+startMortgageDate.save();
+startMortgageDate.refresh();
