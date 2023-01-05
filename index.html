@@ -40,35 +40,37 @@
     </section>
     
     <div class="card">
-      
       <div class="card-content">
         <div class="content">
           To get started, specify your first payment date, starting principal, interest rate and ammortization frequency then press <b>Go</b>. 
         </div>
       </div>
+    </div>
 
-      <footer class="card-footer">
+    <div class="card">
+      <div class="card-content">
 
-        <div class="container">
-          
-          <div class="field has-addons has-addons-centered">
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Start</label>
+          </div>
+          <div class="field-body">
+            <input type="date" id="startMortgageDate" />
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Principal</label>
+          </div>
+          <div class="field-body">
             <p class="control">
-              <input type="date" id="startMortgageDate" />
-            </p>
-            <p class="control">
-              <span class="select">
-                <select>
-                  <option>$</option>
-                </select>
-              </span>
-            </p>
-            <p class="control">
-              <input class="input" type="text" placeholder="Starting Principal">
+              <input class="input" type="text" placeholder="e.g. 240,000.00" value="0.00">
             </p>
           </div>
         </div>
 
-      </footer>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.18/dist/js/bulma-calendar.min.js"></script>
