@@ -39,6 +39,7 @@ const normalizeDollarsValue = async (event) => {
 
 	if (event.target.value.length < 0) return;
 	if (event.target.type != 'text') return;
+	if (!Number(event.target.value)) return;
 
 	try {
 		var number = Number(event.target.value.replace(/[^0-9.-]+/g,""));
@@ -50,7 +51,9 @@ const normalizeDollarsValue = async (event) => {
 			maximumFractionDigits: 2
 		});
 
-		event.target.value = formatter.format(number)
+		var value = formatter.format(number);
+
+		event.target.value = value;
 	}
 	catch {
 
